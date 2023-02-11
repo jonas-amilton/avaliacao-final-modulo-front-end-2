@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card form">
+        <div class="card-header">
+          <h1>Criar Conta</h1>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="Insira seu email"
+              aria-describedby="emailHelp"
+            />
+          </li>
+          <li class="list-group-item">
+            <input
+              type="password"
+              class="form-control"
+              id="passwordInput"
+              placeholder="Insira sua senha"
+              name="password"
+            />
+          </li>
+          <li class="list-group-item">
+            <input
+              type="password"
+              class="form-control"
+              id="repeatPasswordInput"
+              placeholder="Insira sua senha"
+              name="repeatPassword"
+            />
+          </li>
+          <li class="list-group-item">
+            <button type="button" onClick="register()" class="btn btn-success">
+              CRIAR CONTA
+            </button>
+
+            <div id="emailHelp" class="form-text">
+              Não compartilharemos seus dados com mais ninguém.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
+            <p>Criado por Jonas Silva</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>
